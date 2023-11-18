@@ -18,6 +18,6 @@ clientSocket.send(sentence.encode())
 # This handles response from the server side
 # We should see our translations show up here from server side
 modifiedSentence = clientSocket.recv(1024)
-print("From Server: ", modifiedSentence.decode())
+print(f"From Server: , {modifiedSentence.decode()}")
 # This guy will send the FIN or FIN, ACK request
 clientSocket.close()
