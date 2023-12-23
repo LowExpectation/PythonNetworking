@@ -1,3 +1,5 @@
 # Local repo things that I dont want published
 test.py
 url_parse_starter.py
+__pycache__
+127.0.0.1.*
