@@ -22,13 +22,14 @@ else:
 
 # 2. Create the http get request manually
 http_GET = f"GET {url_parsed.path} HTTP/1.1\r\nHost: {url_parsed.hostname}\r\n\r\n"
+# Leaving the below format for readability
 # http_GET = 'GET ' + url_parsed.path + ' HTTP/1.1\r\n' + \
 #     'Host: ' + url_parsed.hostname + '\r\n\r\n'
 
 # print the http GET request to check the output formating
 print(http_GET)
 
-# 3. Connect to destinationl and read the response given
+# 3. Connect to destination and read the response given
 s.connect((url_parsed.hostname, port))
 s.send(http_GET.encode())
 
