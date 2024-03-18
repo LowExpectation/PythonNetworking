@@ -5,6 +5,8 @@ import os
 import sys
 from urllib.parse import urlparse
 
+print("Testing")
+
 
 # function definition to parse url and store in file
 def url_parser(param_url, filename):
