@@ -54,4 +54,4 @@ file2save = sys.argv[2]
 stored_file = url_parser(url, file2save)
 
 # display the filename which contains the parsed attributes of the url
-print("The parsed attributes are stored in: %s" %stored_file)
+print(f"The parsed attributes are stored in: {stored_file}")
