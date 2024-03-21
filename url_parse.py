@@ -15,7 +15,6 @@ def url_parser(param_url, filename):
     # url_parsed.path: path of the file = '/index.html'
     # check out the full document of the urlparse module at https://docs.python.org/3.10/library/urllib.parse.html
 
-    # Write your code here
     # obtain the attributes: host,port and path from the urlparsed
     url_parsed_list = []
     url_parsed = urlparse(param_url)
@@ -27,8 +26,7 @@ def url_parser(param_url, filename):
         url_parsed_list.append("port: {}".format("80"))
     else:
         url_parsed_list.append("port: {}".format(str(url_parsed.port)))
-
-    # Write your code here
+        
     # Open the file (filename from function parameter)
     # write the url, host, port and path to file
     output_file_and_path = os.path.join(os.getcwd(), filename)
